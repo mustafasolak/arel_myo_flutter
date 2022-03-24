@@ -1,0 +1,11 @@
+1. tamsayý türünde adý sayi olan deðiþken tanýmlayýnýz
+2. ondalýklý sayýlarý tutacak agirlik adýnda deðiþken tanýmla
+3. mantýksal verileri tutacak durum isminde degisken tanýmla
+4. Sýcaklýk verisini tutabilecek deðiþken tanýmla
+5. Öðrencinin adýný tutacak bir deðiþken tanýmla
+6. Email adreslerini tutacak deðiþken tanýmlayýnýz ve içine ali@veli.com deðerini atýnýz
+7. Hem türü hem de deðeri deðiþebilen veri adýnda bir deðiþken tanýmlayýnýz ve içine
+   önce ondalýklý, sonra tamsayý, sonra metinsel ve en son olarak da mantýksal bir deðer
+   atýnýz.
+8. Uygulamanýn baþýndan sonuna kadar hiç deðiþmesini istemediðim matematikte kullanýlan
+   sabit bir pi deðerim var. Bunu tanýmlayýnýz ve içine 3.14 deðerini atýnýz.
