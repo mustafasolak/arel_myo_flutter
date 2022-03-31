@@ -17,48 +17,48 @@ void main() {
   
   
   
-  // EĞER=if kullanımı
+  // EÄER=if kullanÄ±mÄ±
   /*
-   *  if(koşul){
-          // şart doğruysa yapılacaklar
+   *  if(koÅŸul){
+          // ÅŸart doÄŸruysa yapÄ±lacaklar
       }
 
-  // Yaş 18 ve üzeri ise Ehliyet alabilirsiniz mesajı yazdıırn
+  // YaÅŸ 18 ve Ã¼zeri ise Ehliyet alabilirsiniz mesajÄ± yazdÄ±Ä±rn
   int yas = 25;
   if(yas >= 18){
     print("Ehliyet alabilirsiniz");
   }else{
-    print("yaşınız 18 ve üzeri olmalı");
+    print("yaÅŸÄ±nÄ±z 18 ve Ã¼zeri olmalÄ±");
   }
   
-  // Hava sıcaklığı 30 derece ise ekrana “Hava çok sıcak” yazdıralım
+  // Hava sÄ±caklÄ±ÄŸÄ± 30 derece ise ekrana â€œHava Ã§ok sÄ±cakâ€ yazdÄ±ralÄ±m
   int sicaklik = 30;
   if(sicaklik == 30){
-    print("Hava çok sıcak");
+    print("Hava Ã§ok sÄ±cak");
   }   */ 
   
   /*
-  // 0-10 arası soğuk
-  // 11-20 arası ılık
-  // 21-34 arası sıcak
-  // 35 ve üzeri alev alev
+  // 0-10 arasÄ± soÄŸuk
+  // 11-20 arasÄ± Ä±lÄ±k
+  // 21-34 arasÄ± sÄ±cak
+  // 35 ve Ã¼zeri alev alev
   int sicaklik = -5;
   if(sicaklik>=0 && sicaklik<=10){
-    print("soğuk");
+    print("soÄŸuk");
   }else if(sicaklik >= 11 && sicaklik<=20 ){
-    print("ılık");
+    print("Ä±lÄ±k");
   }else if(sicaklik >= 21 && sicaklik <=34 ){
-    print("sıcak");
+    print("sÄ±cak");
   }else if(sicaklik >=35){
     print("Alev alev");
   }else{
-    print("çok soğuk");
+    print("Ã§ok soÄŸuk");
   }
   
   
   int ortalama = -5;
   if(ortalama >100 || ortalama <0)
-    print("0-100 arası puan giriniz");
+    print("0-100 arasÄ± puan giriniz");
   else if(ortalama>=90)
     print("AA");
   else if(ortalama>=85)
@@ -93,7 +93,7 @@ void main() {
   List<int> sayilar = [10, -5, 4];
   print(sayilar);
   
-  // LİSTEYE ELEMAN EKLEME
+  // LÄ°STEYE ELEMAN EKLEME
   // add() metodu ile
   isimler.add("Kaan");
   print(isimler);
@@ -105,30 +105,30 @@ void main() {
   print(isimler);
   
   
-  // LİSTENİN ELEMAN SAYISI ÖĞRENME
+  // LÄ°STENÄ°N ELEMAN SAYISI Ã–ÄRENME
   print(isimler.length);
   
-  // LİSTENİN BELİRLİ SIRASINDAKİ ELEMANI SİLME
-  // 2.indexteki elemanı silelim
+  // LÄ°STENÄ°N BELÄ°RLÄ° SIRASINDAKÄ° ELEMANI SÄ°LME
+  // 2.indexteki elemanÄ± silelim
   isimler.removeAt(2);
   print(isimler);
   
-  // Eleman adı vererek silme
+  // Eleman adÄ± vererek silme
   isimler.remove("Ali");
   print(isimler);
    
-  // LİSTEYİ BOŞALTMA, TEMİZLEME
+  // LÄ°STEYÄ° BOÅALTMA, TEMÄ°ZLEME
   isimler.clear();
   print(isimler);
   
-  // 1-100 arası sayıların toplamını ekrana yazan program 
+  // 1-100 arasÄ± sayÄ±larÄ±n toplamÄ±nÄ± ekrana yazan program 
   int toplam = 0;
   for(int sayac=1; sayac<=100; sayac++)
     toplam += sayac;
   
   print(toplam);
   
-  // 0-100 arası çift sayıların toplamını ekrana yazan program 
+  // 0-100 arasÄ± Ã§ift sayÄ±larÄ±n toplamÄ±nÄ± ekrana yazan program 
   toplam = 0;
   for(int sayac=0; sayac<=100; sayac+=2)
     toplam += sayac;
@@ -139,23 +139,23 @@ void main() {
   
   
   /*
-  // int türünde değerleri tutacak boş bir liste tanımladık
+  // int tÃ¼rÃ¼nde deÄŸerleri tutacak boÅŸ bir liste tanÄ±mladÄ±k
   List<int> sayilar  = [];
     
-  // String türünde değerleri tutacak bir liste tanımladık ve
-  // içine değerler attık
+  // String tÃ¼rÃ¼nde deÄŸerleri tutacak bir liste tanÄ±mladÄ±k ve
+  // iÃ§ine deÄŸerler attÄ±k
   List<String> isimler = ["Ali", "Veli", "Hasan"];
   
-  // sayilar listesini ekrana yazdırır
+  // sayilar listesini ekrana yazdÄ±rÄ±r
   print(sayilar);
   
-  // isimler listesini ekrana yazdırır
+  // isimler listesini ekrana yazdÄ±rÄ±r
   print(isimler);
     
-  // Listenin eleman sayısını verir
+  // Listenin eleman sayÄ±sÄ±nÄ± verir
   print(sayilar.length);
   
-  // LİSTEYE ELEMAN EKLEME
+  // LÄ°STEYE ELEMAN EKLEME
   // add() metodu ile eleman ekleme
   sayilar.add(15);
   sayilar.add(20);
@@ -173,24 +173,24 @@ void main() {
   }
     */
     /*
-  // null olabilecek bir değişken tanımlandı
+  // null olabilecek bir deÄŸiÅŸken tanÄ±mlandÄ±
   int? x;
   
-  // ekran çıktısı : null
+  // ekran Ã§Ä±ktÄ±sÄ± : null
   print(x);
   
-  // ??= null ise ata operatörü
-  // x null ise içine 45 değerini at
+  // ??= null ise ata operatÃ¶rÃ¼
+  // x null ise iÃ§ine 45 deÄŸerini at
   x ??= 45;
   
-  // ekran çıktısı : 45
+  // ekran Ã§Ä±ktÄ±sÄ± : 45
   print(x);
   
-  // x null ise 15 değerini ata
-  // ancak bu satır çalışmaz çünkü x null değil
+  // x null ise 15 deÄŸerini ata
+  // ancak bu satÄ±r Ã§alÄ±ÅŸmaz Ã§Ã¼nkÃ¼ x null deÄŸil
   x ??= 45;
   
-  // ekran çıktısı : 45
+  // ekran Ã§Ä±ktÄ±sÄ± : 45
   print(x);
   
   
