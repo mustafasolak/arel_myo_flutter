@@ -16,12 +16,13 @@ void main() {
 
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(0xffF6EAEA),
-        appBar: AppBar(
+        /*appBar: AppBar(
           title: Text("Checkout"),
           centerTitle: true,
-        ),
+        ),*/
         body: SafeArea(
           child: SingleChildScrollView(
             child: Padding(
@@ -29,6 +30,20 @@ void main() {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(Icons.arrow_back),
+                      Text(
+                        "Checkout",
+                        style: TextStyle(color: Colors.grey, fontSize: 15),
+                      ),
+                      Icon(Icons.more_vert),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
                   Text(
                     "Delivery Address",
                     style: TextStyle(
@@ -155,10 +170,81 @@ void main() {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("My Cart"),
+                      Text(
+                        "My Cart",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),
+                      ),
                       Icon(Icons.keyboard_arrow_right),
                     ],
                   ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                          child: Row(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset(
+                              "assets/images/kedi.jpg",
+                              width: 80,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 15,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Beach"),
+                              Text("Crochet Lace"),
+                              Text("Size : XL"),
+                              Row(
+                                children: [
+                                  Icon(Icons.euro, color: Colors.orange),
+                                  Text("39.99"),
+                                ],
+                              )
+                            ],
+                          )
+                        ],
+                      )),
+                      Expanded(
+                          child: Row(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset(
+                              "assets/images/kedi.jpg",
+                              width: 80,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 15,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Beach"),
+                              Text("Crochet Lace"),
+                              Text("Size : XL"),
+                              Row(
+                                children: [
+                                  Icon(Icons.euro, color: Colors.orange),
+                                  Text("39.99"),
+                                ],
+                              )
+                            ],
+                          )
+                        ],
+                      )),
+                    ],
+                  )
                 ],
               ),
             ),
