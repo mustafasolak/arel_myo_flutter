@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:ornekproje/screens/soru_ekle.dart';
 import 'package:ornekproje/screens/yarisma_ekrani.dart';
 
+import 'streambuilder.dart';
+import 'webview_example.dart';
+
 class AnaEkran extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -50,6 +53,32 @@ class AnaEkran extends StatelessWidget {
                   },
                   child: Text(
                     "Soru Ekle",
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => WebviewExample(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "Webview Example",
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => StreamBuilderExample(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "StreamBuilder Example",
                   ),
                 ),
               ],
